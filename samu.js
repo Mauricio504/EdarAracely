@@ -93,9 +93,9 @@ lolKey = samu.LolHumanKey
 //--
 const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
-+ 'FN:-·👑Samu330🏆·-\n'
++ 'FN:-·🌹ARACELY·-\n'
 + 'ORG:🐬NyanBot;\n'
-+ 'TEL;type=CELL;type=VOICE;waid=14694222222:+1 (469) 422 2222\n' // Nomor bot
++ 'TEL;type=CELL;type=VOICE;waid=50495035656:+504 9503-5656\n' // Nomor bot
 + 'END:VCARD' 
 
 
@@ -169,23 +169,23 @@ async function starts() {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
-				teks = `😙Hola @${num.split('@')[0]}
-Bienvenid@ a 
-*${mdata.subject}*
-────────────────
-┏━━━━━━━━━━━━━━━━━━━━
-┃──────✛ *Info* ✛───────
-┃━━━━━━━━━━━━━━━━━━━━
-┠⊷️ *Nombre* : @${num.split('@')[0]}
-┠⊷️ *Edad* :
-┠⊷️ *Pais* : null
-┠⊷️ *Género* : bi
-┗━━━━━━━━━━━━━━━━━━━━
+				teks = `_En el nombre de Jesús le damos la bienvenida a este humilde grupo, agradecemos cualquier aporte que ayude a edificar vidas... Que la gracia del Señor les cubra por siempre_ @${num.split('@')[0]}
+
+*${mdata.subject}* _Fue creado con la intención de edificar vidas para la gloria del Señor, espero sea de su agrado y puedas ayudar con tu aporte a esta misión.. Te invito a que trabajemos juntos para la viña del señor 🌟Recuerda lo que nos dice el Señor, a través de las sagradas escrituras :_
+*Mateo 10:33....*
+*Pero cualquiera que me niegue delante de los hombres, yo también lo negaré delante de mi Padre que está en los cielos.*
 Usa *${prefix}reg* para registrarte y usar a *NyanBot*.`
 				samu330.sendMessage(mdata.id, teks, MessageType.text, { contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
 				num = anu.participants[0]
-				teks = `Adios @${num.split('@')[0]} 👋`
+				teks = `*1 Corintios 15:58*
+*Así que, hermanos míos amados, estad firmes y constantes, creciendo en la obra del Señor siempre, sabiendo que vuestro trabajo en el Señor no es en vano.*
+-1 "Dios bendiga la vida de"  @${num.split('@')[0]} Lastimosamente se ha ido, sus razones tendrá, pero la lucha continúa hasta alcanzar la victoria en Cristo Jesús 
+
+*Mateo 11:12*
+*Desde los días de Juan el Bautista hasta ahora, al Reino de los cielos se da vida; y los valientes lo arrebatan.*
+
+Seamos valiente para arrebatar el reino que Jesús nos prepara en el cielo, no te canses ni desmayes, Solo confía. ... Mi alma adora, al Padre al hijo y al Espíritu Santo 🙇🏻‍♀️`
 				samu330.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}})
 			}
 		} catch (e) {
